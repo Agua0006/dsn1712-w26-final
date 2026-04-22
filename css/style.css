@@ -1,0 +1,140 @@
+/* {
+    margin: 0;
+    padding: 0;
+} */
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #222;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h1 
+{
+    font-size: 2.027rem;
+    margin-bottom: 10px;
+}
+
+h2 
+{
+    font-size: 1.802rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3
+{
+    font-size: 1.266rem;
+}
+
+p 
+{
+    margin-bottom: 10px;
+}
+
+.wrapper 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header .wrapper 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul 
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header a 
+{
+    text-decoration: none;
+    color: #222;
+}
+
+.product 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-images
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.product-info a
+{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.behind-content 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonials
+{
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.testimonials h2
+{
+    color: #fff;
+}
+
+.testimonials-content 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products-grid 
+{
+display: grid;
+grid-template-columns: 1fr;
+row-gap: 20px;
+}
+
+.products-grid div 
+{
+background-color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+footer 
+{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (min-width: 768px)
+
