@@ -5,7 +5,7 @@
 
 body
 {
-    
+    font-family: 'poppins'; 
     background-color: #f8fafc;
     color: #222;
 }
@@ -67,7 +67,7 @@ nav a
 
 .product 
 {
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -106,7 +106,7 @@ nav a
 {
     /* background-color: brown; */
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -146,6 +146,7 @@ footer
 
 @media (min-width: 768px) 
 {
+
     .product
     {
         flex-direction: row; 
@@ -173,15 +174,26 @@ footer
     gap: 20px;
     }
     
+
 }
 
 @media (min-width: 960px)
 {
     .products-grid 
     {
+        /* background-color: aqua; */
         grid-template-columns: repeat(4, 1fr);
     }
-
+    .behind-content
+    {
+        flex-direction: row;
+        display: flex;
+    }
+    .testimonials-content
+    {
+        flex-direction: row;
+        display: flex;
+    }
     header ul 
     {
         gap: 40px;
