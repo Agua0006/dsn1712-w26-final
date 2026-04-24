@@ -67,7 +67,7 @@ nav a
 
 .product 
 {
-    /* background-color: forestgreen; */
+    background-color: forestgreen;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -104,8 +104,9 @@ nav a
 
 .behind-content 
 {
+    /* background-color: brown; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 20px;
 }
 
@@ -128,14 +129,6 @@ nav a
     gap: 20px;
 }
 
-.products-grid 
-{
-/* background-color: aqua; */
-display: grid;
-grid-template-columns: 1fr 1fr;
-row-gap: 20px;
-}
-
 .products-grid div 
 {
 /* background-color: #fff; */
@@ -153,12 +146,25 @@ footer
 
 @media (min-width: 768px) 
 {
+
+    .product
+    {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .product-images
+    {
+        flex: 1;
+    }
+
+
     .products-grid
     {
-        grid-template-columns: repeat (2, 1fr);
-        /* flex-direction: row;
-        align-items: flex-start;
-        gap: 40px; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        
     }
 
     .products-grid 
@@ -167,17 +173,15 @@ footer
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     }
-
     
 
 }
 
 @media (min-width: 960px)
 {
-
     .products-grid 
     {
-        grid-template-columns: repeat (4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     header ul 
